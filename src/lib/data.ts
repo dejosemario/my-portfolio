@@ -2,11 +2,10 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-
-import shopliveryImg from "@/public/shoplivery.png";
-import jointSecurityImg from "@/public/jointsecurity.png";
-import fundinImg from "@/public/fundin.png";
-import girmaImg from "@/public/girma.png";
+import shopliveryImg from "@/public/shopliveryImg.png";
+import jointSecurityImg from "@/public/jointSecurityImg.png";
+import fundinImg from "@/public/fundinImg.png";
+import girmaImg from "@/public/girmaImg.png";
 
 export const links = [
   { name: "Home", hash: "#home" },
