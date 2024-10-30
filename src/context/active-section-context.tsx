@@ -15,7 +15,7 @@ type ActiveSectionContextType = {
 };
 
 export const ActiveSectionContext =
-  createContext<ActiveSectionContextType | null>(null);
+  createContext<ActiveSectionContextType | null>(null); 
 
 export default function ActiveSectionContextProvider({
   children,
