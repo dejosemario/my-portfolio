@@ -55,7 +55,29 @@ export default function Experience() {
     </section>
   );
 }
-function useTheme(): { theme: any; } {
-  throw new Error("Function not implemented.");
-}
 
+function useTheme() {
+  const [theme, setTheme] = React.useState("light");
+
+  React.useEffect(() => {
+    // Check if theme is stored in localStorage
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      setTheme(savedTheme);
+    } else {
+      // Check system preference
+      const prefersDark = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      setTheme(prefersDark ? "dark" : "light");
+    }
+  }, []);
+
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme);
+  };
+
+  return { theme, toggleTheme };
+}
