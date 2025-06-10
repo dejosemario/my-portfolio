@@ -2,7 +2,8 @@
 
 import React from 'react'
 import Image from 'next/image'
-import myImage from "@/public/myImage.png";
+import myImage from "../../../public/myImage.png"
+
 import { motion } from 'framer-motion'
 
 
