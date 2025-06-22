@@ -8,7 +8,7 @@ import shopliveryImg from "../../public/shopliveryImg.png";
 import jointSecurityImg from "../../public/jointSecurityImg.png";
 import fundinImg from "../../public/fundinImg.png";
 import girmaImg from "../../public/girmaImg.png";
-import bumpitImg from "../../public/bumpitImg.png"; 
+import bumpitImg from "../../public/bumpitImg.jpg"; 
 import unspokennImg from "../../public/unspokennImg.png"; 
 import teleclinixImg from "../../public/teleclinixImg.png"; 
 import eventfulImg from "../../public/eventfulImg.png"; 
